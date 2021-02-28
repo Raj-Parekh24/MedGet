@@ -1,0 +1,128 @@
+{% load socialaccount %}
+<html>
+
+<head>
+  <style>
+    #box {
+      width: 420px;
+      background-color: #292929;
+      border-radius: 20px;
+      position: relative;
+    }
+
+    #txt {
+      font-family: "Sans";
+      color: white;
+      position: relative;
+    }
+
+
+    body {
+      background-color: #2a3b57;
+
+    }
+
+
+    #button-dr {
+      width: 120px;
+      height: 30px;
+      position: relative;
+      border-radius: 40px;
+      border: 3px #50ad67 solid;
+      background: transparent;
+      color: white;
+      font-family: "Sans";
+      font-size: 1em;
+      outline: none;
+    }
+
+    #button-dr:hover {
+      cursor: pointer;
+      background: #50ad67;
+      transition: .2s;
+    }
+
+    #button-usr {
+      width: 120px;
+      height: 30px;
+      position: relative;
+      border-radius: 40px;
+      border: 3px #3385ff solid;
+      background: transparent;
+      color: white;
+      font-family: "Sans";
+      font-size: 1em;
+      outline: none;
+    }
+
+    #button-usr:hover {
+      cursor: pointer;
+      background: #3385ff;
+      transition: .2s;
+    }
+
+    #button-log {
+      width: 120px;
+      height: 30px;
+      position: relative;
+      border-radius: 40px;
+      border: 3px #800000 solid;
+      background: transparent;
+      color: white;
+      font-family: "Sans";
+      font-size: 1em;
+      outline: none;
+    }
+
+    #button-log:hover {
+      cursor: pointer;
+      background: #800000;
+      transition: .2s;
+    }
+
+    #button-dash {
+      width: 120px;
+      height: 30px;
+      position: relative;
+      border-radius: 40px;
+      border: 3px #5c0099 solid;
+      background: transparent;
+      color: white;
+      font-family: "Sans";
+      font-size: 1em;
+      outline: none;
+    }
+
+    #button-dash:hover {
+      cursor: pointer;
+      background: #5c0099;
+      transition: .2s;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+  <title>MEDGET</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  <center>
+    <div id="box">
+      <h1 id="txt">MEDGET</h1>
+      <br>
+      {% if user.is_authenticated %}
+      <h2 id="txt">Welcome, {{ user.username }} !</h2><br><br>
+      <button id="button-dash"><a href="{{to}}">Dashboard</a></button><br><br>
+      <button id="button-log"><a href="{% url 'account_logout' %}">Logout</a></button><br><br>
+      {% else %}
+      <button id="button-usr"><a href="{% provider_login_url 'google' next='/patient' %}">Patient</a></button><br><br>
+      <button id="button-dr"><a href="{% provider_login_url 'google' next='/doctor' %}">Doctor</a></button> <br><br>
+      {% endif %}
+    </div>
+  </center>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+#box {
+    width: 420px;
+    background-color: #292929;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  #txt{
+    font-family: "Sans";
+    color: white;
+    position: relative;
+  }
+  
+  .field {
+    border-radius: 55px;
+    border: 3px #2a3b57 solid;
+    text-align: center;
+    font-family: "Sans";
+    width: 170px;
+    height: 25px;
+    position: relative;
+    font-size: 1.2em;
+    outline: none;
+    background:transparent;
+    color: white;
+  }
+  
+  
+  ::placeholder{
+    color: white;
+  }
+  
+  .field:hover {
+    width: 300px;
+    transition: .5s ease-in-out;
+    border: 3px #3385ff solid;
+    cursor: default;
+  }
+  
+  body {
+    background-color: #2a3b57;
+  }
+  
+  
+  .field:focus {
+     width: 350px;
+    border: 3px #3385ff solid;
+  }
+
+  #button-usr {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    border-radius: 40px;
+    border: 3px #3385ff solid;
+    background: transparent;
+    color: white;
+    font-family: "Sans";
+    font-size: 1em;
+    outline: none;
+  }
+  
+  #button-usr:hover {
+    cursor: pointer;
+    background: #3385ff;
+    transition: .2s;
+  }

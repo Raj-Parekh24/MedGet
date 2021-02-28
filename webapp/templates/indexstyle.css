@@ -1,0 +1,56 @@
+#box {
+    width: 420px;
+    background-color: #292929;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  #txt{
+    font-family: "Sans";
+    color: white;
+    position: relative;
+  }
+  
+  
+  body {
+    background-color: #2a3b57;
+  }
+  
+  
+  #button-dr {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    border-radius: 40px;
+    border: 3px #50ad67 solid;
+    background: transparent;
+    color: white;
+    font-family: "Sans";
+    font-size: 1em;
+    outline: none;
+  }
+  
+  #button-dr:hover {
+    cursor: pointer;
+    background: #50ad67;
+    transition: .2s;
+  }
+  
+  #button-usr {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    border-radius: 40px;
+    border: 3px #3385ff solid;
+    background: transparent;
+    color: white;
+    font-family: "Sans";
+    font-size: 1em;
+    outline: none;
+  }
+  
+  #button-usr:hover {
+    cursor: pointer;
+    background: #3385ff;
+    transition: .2s;
+  }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<style>
+  #box {
+    width: 80%;
+    background-color: #292929;
+    border-radius: 20px;
+    position: relative;
+  }
+a {
+      color: inherit;
+      text-decoration: none;
+    }
+  #txt {
+    font-family: "Sans";
+    color: white;
+    position: relative;
+    margin-left: 5%;
+  }
+
+  .field {
+    border-radius: 55px;
+    border: 3px #2a3b57 solid;
+    text-align: center;
+    font-family: "Sans";
+    width: 170px;
+    height: 25px;
+    position: relative;
+    font-size: 1.2em;
+    outline: none;
+    background: transparent;
+    color: white;
+  }
+
+
+  ::placeholder {
+    color: white;
+  }
+
+  .field:hover {
+    width: 300px;
+    transition: .5s ease-in-out;
+    border: 3px #50ad67 solid;
+    cursor: default;
+  }
+
+  body {
+    background-color: #2a3b57;
+  }
+
+
+  .field:focus {
+    width: 350px;
+    border: 3px #50ad67 solid;
+  }
+
+  .details {
+    border-radius: 40px;
+    border: 3px #50ad67 solid;
+    background: transparent;
+    width: 90%;
+    color: white;
+    font-family: "Sans";
+    text-align: left;
+    font-size: 1em;
+    outline: none;
+  }
+
+  .button-view {
+      width: 20%;
+      height: 30px;
+      position: relative;
+      border-radius: 40px;
+      border: 3px #009900 solid;
+      background: transparent;
+      color: white;
+      font-family: "Sans";
+      font-size: 1em;
+      outline: none;
+    }
+
+    .button-view:hover {
+      cursor: pointer;
+      background: #009900;
+      transition: .2s;
+    }
+</style>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Forums</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  <center>
+    <br><br><br><br>
+    <div id="box">
+        <br><br>
+        <h1 id="txt">Answered Questions :-</h1>
+        <div class="details">
+            <!--repeat div to display q/a, content in h3-->
+            {% for i,q,a in ans %}
+          <div>
+            <h3 id="txt">Q. {{q}}</h3>
+            <h3 id="txt">Ans.{{a}}</h3>
+          </div>
+          {%endfor%}
+          <br>
+        
+        </div>
+        <br><br>
+    </div>
+    <br><br><br><br>
+    <div id="box">
+        <br><br>
+        <h1 id="txt">Un-Answered Questions :-</h1>
+        <div class="details">
+            <!--repeat div to display q/a, content in h3-->
+            {% for i,q in uns %}
+          <div id="txt">
+            <h3>Q. {{q}}</h3>
+            {% if doc %}
+           <button type=submit class="button-view"><a href='giveans?id={{i}}'>Give Answer</a></button><br><br>
+            {%endif%}
+          </div>
+           {%endfor%}
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>

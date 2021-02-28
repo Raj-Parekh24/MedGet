@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>User Form</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #box {
+      width: 420px;
+      background-color: #292929;
+      border-radius: 20px;
+      position: relative;
+    }
+
+    #txt {
+      font-family: "Sans";
+      color: white;
+      position: relative;
+    }
+
+    .field {
+      border-radius: 55px;
+      border: 3px #2a3b57 solid;
+      text-align: center;
+      font-family: "Sans";
+      width: 170px;
+      height: 25px;
+      position: relative;
+      font-size: 1.2em;
+      outline: none;
+      background: transparent;
+      color: white;
+    }
+
+
+    ::placeholder {
+      color: white;
+    }
+
+    .field:hover {
+      width: 300px;
+      transition: .5s ease-in-out;
+      border: 3px #3385ff solid;
+      cursor: default;
+    }
+
+    body {
+      background-color: #2a3b57;
+    }
+
+
+    .field:focus {
+      width: 350px;
+      border: 3px #3385ff solid;
+    }
+
+    #button-usr {
+      width: 120px;
+      height: 30px;
+      position: relative;
+      border-radius: 40px;
+      border: 3px #3385ff solid;
+      background: transparent;
+      color: white;
+      font-family: "Sans";
+      font-size: 1em;
+      outline: none;
+    }
+
+    #button-usr:hover {
+      cursor: pointer;
+      background: #3385ff;
+      transition: .2s;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  <center>
+    <br><br><br><br>
+    <div id="box">
+
+      <br><br>
+
+      <h1 id="txt">User Details</h1>
+
+      <input placeholder="First Name" type="text" title="Username." id="firstname" class="field"></input>
+      <br><br>
+      <input placeholder="Last Name" type="text" title="LastName." id="lastname" class="field"></input>
+      <br><br>
+      <input placeholder="Phone Number" type="tel" title="Phone." id="Phone" class="field"></input>
+      <br><br>
+      <input placeholder="Pin Code" id="zip" name="zip" type="text" pattern="[0-9]*" maxlength="6" class="field">
+      <br><br>
+      <input placeholder="City" type="text" title="City." id="City" class="field"></input>
+      <br><br>
+      <button id="button-usr">Submit</button>
+      <br><br>
+    </div>
+
+</body>
+
+</html>

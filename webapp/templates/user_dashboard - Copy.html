@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #box {
+    width: 420px;
+    background-color: #292929;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  #Services{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.ServicesWrapper{
+  margin: 20px 50px;
+  display:flex;
+  width: 90%;
+  height:210px;
+  background-color:#0f0f0fcc;
+}
+.Circle:before{
+  position:absolute;
+  content:"";
+  min-width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background-color:#2a3b57;
+  top:5%;
+  right:-90%;
+}
+.Circle{
+  display:inline-block;
+  position:relative;
+  content:"";
+  width: 55px;
+  height: 110px;
+  border-radius:110px 0px 0px 110px;
+  background: #0f0f0fcc;
+  top:20%;
+  right:11%;
+}
+.Info{
+  display:block;
+  max-width:400px;
+}
+h1{
+  color:white;
+  margin:10px 5px;
+}
+p{
+  color:white;
+  margin:0px 5px;
+}
+button, input[type="submit"], input[type="reset"] {
+	background: #4483b4;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  margin:10px 5px;
+}
+
+  .Circle:before{
+    position:absolute;
+  content:"";
+  min-width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background-color:#2a3b57;
+  top:10%;
+  right:5%;
+  }
+  .Circle{
+    display:flex;
+    position:relative;
+    content:"";
+    width: 110px;
+    height: 55px;
+    border-radius:110px 110px  0px 0px ;
+    background: #0f0f0fcc;
+    left:65px;
+    top:-55px;
+  }
+  .ServicesWrapper{
+  margin: 50px 50px;
+  display:block;
+  min-width:250px;
+  height:auto;
+  background-color:#0f0f0fcc;
+}
+  .Info{
+  display:block;
+  margin: 10px;
+  margin-top:10px
+}
+
+  #Report {
+    width: 420px;
+    background-color: #330033;
+    border-radius: 20px;
+    font-family: "Sans";
+    outline: none;
+    color: white;
+    position: relative;
+  }
+
+  #txt{
+    font-family: "Sans";
+    color: white;
+  }
+  
+  .field {
+    border-radius: 55px;
+    border: 3px #2a3b57 solid;
+    text-align: center;
+    font-family: "Sans";
+    width: 170px;
+    height: 25px;
+    font-size: 1.2em;
+    outline: none;
+    position: relative;
+    background:transparent;
+    color: white;
+  }
+  
+  
+  ::placeholder{
+    color: white;
+  }
+  
+  .field:hover {
+    width: 300px;
+    transition: .5s ease-in-out;
+    position: relative;
+    border: 3px #3385ff solid;
+    cursor: default;
+  }
+  
+  body {
+    background-color: #2a3b57;
+  }
+  
+  
+  .field:focus {
+     width: 350px;
+    border: 3px #3385ff solid;
+  }
+
+  #button-usr {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    border-radius: 40px;
+    border: 3px #3385ff solid;
+    background: transparent;
+    color: white;
+    font-family: "Sans";
+    font-size: 1em;
+    outline: none;
+  }
+  
+  #button-usr:hover {
+    cursor: pointer;
+    background: #3385ff;
+    transition: .2s;
+  }
+
+  .button-view {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    border-radius: 40px;
+    border: 3px #cc6699 solid;
+    background: transparent;
+    color: white;
+    font-family: "Sans";
+    font-size: 1em;
+    outline: none;
+  }
+  
+  .button-view:hover {
+    cursor: pointer;
+    background: #cc6699;
+    transition: .2s;
+  }
+   
+  .button-connect {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    border-radius: 40px;
+    border: 3px #ac39ac solid;
+    background: transparent;
+    color: white;
+    font-family: "Sans";
+    font-size: 1em;
+    outline: none;
+  }
+  
+  .button-connect:hover {
+    cursor: pointer;
+    background: #ac39ac;
+    transition: .2s;
+  } 
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <center>
+        <br><br><br><br>
+        <div id="box">
+            <br><br>
+            <h1 id="txt">User Dashboard</h1>          
+            <h1 id="txt">Symptoms</h1>
+            
+            <input placeholder="Symptoms" type="text" title="Symptoms." id="Symptoms" class="field"></input>
+            <br><br>
+            <button id="button-usr">Get Result</button>
+            <h2 id="txt">---OR---</h2>
+            <button id="button-usr">Call Doctor</button>
+            <br><br>
+        </div>
+        <br><br>
+        <div id="Report">
+          <br>
+          <h1 id="txt">Report :-</h1>  
+            <!--whole h2 tag in for loop to display medicine results--> 
+            <h2 id="txt">Medicine 1</h2> 
+            <h2 id="txt">Medicine 2</h2>
+            <br> 
+        </div>
+        <br><br>
+        <div id="box">
+          <br>
+          <h1 id="txt">Available Doctors</h1>   
+          <!--whole section tag in for loop to create labels-->
+          <section id="Services">
+            <div class="ServicesWrapper">
+              <div class="Circle">  
+              </div>
+              <div class="Info">
+                <h1>Doctor Name </h1>
+                <p>
+                   Speciality
+                </p>
+                <button class="button-view" id="view">
+                  View Profile
+                </button>
+                <br>
+                <button class="button-connect" id="connect">
+                  Connect
+                </button>
+                <br><br>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+</body>
+
+</html>

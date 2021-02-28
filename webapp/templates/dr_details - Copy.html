@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<style>
+#box {
+    width: 420px;
+    background-color: #292929;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  #txt{
+    font-family: "Sans";
+    color: white;
+    position: relative;
+  }
+  
+  .field {
+    border-radius: 55px;
+    border: 3px #2a3b57 solid;
+    text-align: center;
+    font-family: "Sans";
+    width: 170px;
+    height: 25px;
+    position: relative;
+    font-size: 1.2em;
+    outline: none;
+    background:transparent;
+    color: white;
+  }
+  
+  
+  ::placeholder{
+    color: white;
+  }
+  
+  .field:hover {
+    width: 300px;
+    transition: .5s ease-in-out;
+    border: 3px #50ad67 solid;
+    cursor: default;
+  }
+  
+  body {
+    background-color: #2a3b57;
+  }
+  
+  
+  .field:focus {
+     width: 350px;
+    border: 3px #50ad67 solid;
+  }
+
+  .details{
+    
+    border-radius: 40px;
+    border: 3px #50ad67 solid;
+    background: transparent;
+    width: 90%;
+    color: white;
+    font-family: "Sans";
+    position: relative;
+    font-size: 1em;
+    outline: none;
+  }
+</style>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doctor Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <center>
+        <br><br><br><br>
+        <div id="box">
+            <form Method="POST" > 
+            <br><br>
+            <h1 id="txt">Doctor Details :-</h1>
+            <div class="details">
+                <p>Name :- Doctor 1</p>
+                <p>Phone Number :- 1234567890</p>
+                <p>Pin Code :- 123456</p>
+                <p>City :- Ahmedabad</p>
+                <p>License Number :- 1234567890</p>
+                <p>Speciality :- Physician</p>
+                <p>Visiting Hospital :- Nirma University clinic</p>
+            </div>
+            <br><br>
+        </div>
+        </form>
+</body>
+
+</html>

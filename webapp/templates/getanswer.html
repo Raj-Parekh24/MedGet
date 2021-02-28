@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<style>
+ #box {
+    width: 80%;
+    background-color: #292929;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  #txt {
+    font-family: "Sans";
+    color: white;
+    position: relative;
+    margin-left: 5%;
+  }
+
+  .field {
+    border-radius: 55px;
+    border: 3px #2a3b57 solid;
+    text-align: center;
+    font-family: "Sans";
+    width: 60%;
+    height: 20%;
+    position: relative;
+    font-size: 1.2em;
+    outline: none;
+    background: transparent;
+    color: white;
+  }
+
+
+  ::placeholder {
+    color: white;
+  }
+
+  .field:hover {
+    width: 70%;
+    transition: .5s ease-in-out;
+    border: 3px #50ad67 solid;
+    cursor: default;
+  }
+
+  body {
+    background-color: #2a3b57;
+  }
+
+
+  .field:focus {
+    width: 70%;
+    border: 3px #50ad67 solid;
+  }
+
+  .details {
+    border-radius: 40px;
+    border: 3px #50ad67 solid;
+    background: transparent;
+    width: 90%;
+    color: white;
+    font-family: "Sans";
+    text-align: left;
+    font-size: 1em;
+    outline: none;
+  }
+
+  .button-view {
+      width: 20%;
+      height: 30px;
+      position: relative;
+      border-radius: 40px;
+      border: 3px #009900 solid;
+      background: transparent;
+      color: white;
+      font-family: "Sans";
+      font-size: 1em;
+      outline: none;
+    }
+
+    .button-view:hover {
+      cursor: pointer;
+      background: #009900;
+      transition: .2s;
+    }
+</style>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Doctor Answer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  <center>
+    <br><br><br><br>
+    <div id="box">
+      <form Method="POST">
+        <br><br>
+        {% csrf_token %}
+        <h1 id="txt">Print Question Here ?</h1>
+          <input name='id' type=hidden value="{{id}}">
+        <textarea name="answer" id="w3review" name="w3review" rows="4" cols="50" class="field" style="overflow:hidden">
+            
+            </textarea><br><br>
+        <button class="button-view">Submit</button>
+        <br><br>
+    </div>
+    </form>
+</body>
+
+</html>
