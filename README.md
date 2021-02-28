@@ -4,13 +4,13 @@ Mined Hackathon Project Medget
 
 Members :-
 Raj Parekh (Nirma University)
-  18bce143@nirmauni.ac.in
+  18bce143@nirmauni.ac.in<br>
 Nihar Thakkar (Nirma University)
-  18bce133@nirmauni.ac.in
+  18bce133@nirmauni.ac.in<br>
 Nirav Madani (Nirma University)
-  18bce135@nirmauni.ac.in
+  18bce135@nirmauni.ac.in<br>
 Akshat Shah (Nirma University)
-  18bce215@nirmauni.ac.in
+  18bce215@nirmauni.ac.in<br>
   
   
 DATASET :-
