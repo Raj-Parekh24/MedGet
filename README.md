@@ -17,5 +17,12 @@ DATASET :-
 UCI ML Drug Review dataset (https://www.kaggle.com/jessicali9530/kuc-hackathon-winter-2018)
 
 Use on Local Machine :- 
+git clone https://github.com/Raj-Parekh24/MedGet.git
+pip install -r requirements.txt
 
-git clone 
+To access on web :- 
+https://medget.herokuapp.com/
+
+Using Smart web view for apk :- 
+git clone https://github.com/mgks/Android-SmartWebView.git
+assigned above mentioned web url in SmartView.java to static varible name ASWV_URL to get an apk. 
