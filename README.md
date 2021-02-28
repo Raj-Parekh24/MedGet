@@ -28,6 +28,8 @@ Using Smart web view for apk :- <br>
 git clone https://github.com/mgks/Android-SmartWebView.git<br>
 assigned above mentioned web url in SmartView.java to static varible name ASWV_URL to get an apk. <br>
 
+
+Tech Stack :- <br>
 TensorFlow, Kera's, Scikit-Learn, NumPy, Pandas, Matplotlib, NLTK for making model and pre processing.<br>
 Django for backend development.<br>
 HTML CSS for front end development<br>
