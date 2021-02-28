@@ -16,3 +16,6 @@ Akshat Shah (Nirma University)
 DATASET :-
 UCI ML Drug Review dataset (https://www.kaggle.com/jessicali9530/kuc-hackathon-winter-2018)
 
+Use on Local Machine :- 
+
+git clone 
