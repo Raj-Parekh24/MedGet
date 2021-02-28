@@ -14,15 +14,16 @@ Akshat Shah (Nirma University)
   
   
 DATASET :-
-UCI ML Drug Review dataset (https://www.kaggle.com/jessicali9530/kuc-hackathon-winter-2018)
+UCI ML Drug Review dataset<br>
+(https://www.kaggle.com/jessicali9530/kuc-hackathon-winter-2018)
 
-Use on Local Machine :- 
-git clone https://github.com/Raj-Parekh24/MedGet.git
-pip install -r requirements.txt
+Use on Local Machine :- <br>
+git clone https://github.com/Raj-Parekh24/MedGet.git<br>
+pip install -r requirements.txt<br>
 
-To access on web :- 
-https://medget.herokuapp.com/
+To access on web :- <br>
+https://medget.herokuapp.com/<br>
 
-Using Smart web view for apk :- 
-git clone https://github.com/mgks/Android-SmartWebView.git
-assigned above mentioned web url in SmartView.java to static varible name ASWV_URL to get an apk. 
+Using Smart web view for apk :- <br>
+git clone https://github.com/mgks/Android-SmartWebView.git<br>
+assigned above mentioned web url in SmartView.java to static varible name ASWV_URL to get an apk. <br>
