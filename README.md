@@ -9,6 +9,7 @@ Mined Hackathon Project Medget. Simple Drug recommendation system based on sympt
  2. Suggest drug based on symptoms.
  3. Connect patient to nearby doctor via call.
  4. Doctor can choose when they are available . Doctor will be displayed in List only if they are `available`
+ 5. Google Sign In for smooth user experience
 
 ### Members 
 1. Raj Parekh (Nirma University)
@@ -51,5 +52,5 @@ assigned above mentioned web url in SmartView.java to static varible name ASWV_U
 |--|--|
 | Machine Learning Model | Android App |
 | Android App | Raj, Nirav |
-| Backend and Database | Nirav |
+| Backend, Database & APIs | Nirav |
 | Frontend | Raj |
