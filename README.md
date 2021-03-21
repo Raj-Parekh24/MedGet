@@ -10,7 +10,7 @@ Mined Hackathon Project Medget. Simple Drug recommendation system based on sympt
  3. Connect patient to nearby doctor via call.
  4. Doctor can choose when they are available . Doctor will be displayed in List only if they are `available`
 
-Members :-
+### Members 
 1. Raj Parekh (Nirma University)
   18bce143@nirmauni.ac.in<br>
 2. Nihar Thakkar (Nirma University)
