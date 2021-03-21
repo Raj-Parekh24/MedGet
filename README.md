@@ -50,7 +50,7 @@ assigned above mentioned web url in SmartView.java to static varible name ASWV_U
 ## Contribution
 | Component | Contributors |
 |--|--|
-| Machine Learning Model | Android App |
+| Deep Learning Model | Akshat, Nihar, Raj |
 | Android App | Raj, Nirav |
 | Backend, Database & APIs | Nirav |
 | Frontend | Raj |
