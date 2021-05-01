@@ -29,7 +29,7 @@ UCI ML Drug Review dataset<br>
 Use on Local Machine
 
     git clone https://github.com/Raj-Parekh24/MedGet.git
-    pip install -r requirements.txt
+    pip install -r webapp/requirements.txt
 
 To access on web
 https://medget.herokuapp.com/<br>
