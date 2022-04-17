@@ -29,7 +29,9 @@ UCI ML Drug Review dataset<br>
 Use on Local Machine
 
     git clone https://github.com/Raj-Parekh24/MedGet.git
-    pip install -r webapp/requirements.txt
+    cd webapp
+    pip install -r requirements.txt
+    
 
 To access on web
 https://medget.herokuapp.com/<br>
@@ -51,6 +53,6 @@ assigned above mentioned web url in SmartView.java to static varible name ASWV_U
 | Component | Contributors |
 |--|--|
 | Deep Learning Model | Akshat, Nihar, Raj |
-| Android App | Raj, Nirav |
-| Backend, Database & APIs | Nirav |
+| Android App | Nirav |
+| Backend, Database & APIs | Nirav, Raj | 
 | Frontend | Raj |
